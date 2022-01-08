@@ -259,3 +259,10 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/BattleSea/Model/Tests/ShipTest.cs
+/BattleSea/Model/Tests/PointTest.cs
+/BattleSea/Model/Tests/BattleTest.cs
+/BattleSea/Model/Interfaces/IBattle.cs
+/BattleSea/Service/Interfaces/IShootService.cs
+/BattleSea/Service/Tests
+/BattleSea/Service
