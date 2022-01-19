@@ -22,10 +22,10 @@ namespace BattleSea
 
         #region VARIABLES
         private Chatter Chatter = new Chatter();
-        private string ShipCell = Environment.CurrentDirectory + @"\images\ship_cell.jpg";
-        private string ShipClean = Environment.CurrentDirectory + @"\images\clean.jpg";
-        private string Miss = Environment.CurrentDirectory + @"\images\miss.jpg";
-        private string Dead = Environment.CurrentDirectory + @"\images\dead.jpg";
+        private string ShipCell = Environment.CurrentDirectory + @"\Resources\ship_cell.jpg";
+        private string ShipClean = Environment.CurrentDirectory + @"\Resources\clean.jpg";
+        private string Miss = Environment.CurrentDirectory + @"\Resources\miss.jpg";
+        private string Dead = Environment.CurrentDirectory + @"\Resources\dead.jpg";
         private IShootService shootService;
         private IShootService compShootService;
         private Battle battle = new Battle();
