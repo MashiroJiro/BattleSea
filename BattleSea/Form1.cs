@@ -33,7 +33,7 @@ namespace BattleSea
 
         #endregion
 
-        public void новаяИграСКомпьютеромToolStripMenuItem_Click(Object sender, EventArgs e) 
+        public void NewGameToolStripMenuItem_Click(Object sender, EventArgs e) 
         {
             DialogResult dialogResult = MessageBox.Show("Вы действительно хотите начать новую игру с компьютером?", "Новая игра с компьютером", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.Yes)
@@ -42,14 +42,7 @@ namespace BattleSea
                 Chatter.UpdateGrouBoxText(groupBox1, "Осталось расположить кораблей:");
                 Chatter.UpdateStatusLbl1(toolStripStatusLabel1, "Выберите способ расстановки кораблей");
                 Chatter.GameWriteNotification(richTextBox2, "Вы начали новую игру с компьютером");
-                Chatter.GameUpdateNotification(richTextBox2, "Расставьте корабли на вашем поле.\n" +
-                                                            "Для этого нажмите на соответствующий " +
-                                                            "корабль, что вы видите слева от этого окна, " +
-                                                            "выберите его расположение - " +
-                                                            "вертикально или горизонтально, после чего " +
-                                                            "выберите клетку на поле с условием что эта клетка " +
-                                                            "будет самая верхняя или же самая левая для выбранного корабля " +
-                                                            "соответственно. Между кораблями должно оставаться расстояние в 1 клетку");
+                Chatter.GameUpdateNotification(richTextBox2, "Расставьте корабли на вашем поле.\n");
                 ControlEnabler1(true);
             }
         }
@@ -107,7 +100,7 @@ namespace BattleSea
             else dataGridView1.Enabled = state;
         }
 
-        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
         }
