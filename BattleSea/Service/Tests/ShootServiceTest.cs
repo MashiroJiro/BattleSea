@@ -21,6 +21,9 @@ namespace BattleSea.Test.Service
             ShootService = new ShootService(battle.Object, enemy.Object);
         }
 
+        //
+        // Проверка на успешность выстрела 
+        //
         [Test]
         public void ShootIsSuccess ()
         {
@@ -28,7 +31,9 @@ namespace BattleSea.Test.Service
 
             Assert.IsTrue(ShootService.Shoot(new Point(1, 1)));
         }
-
+        //
+        // Проверка на промах
+        //
         [Test]
         public void ShootIsFalse()
         {

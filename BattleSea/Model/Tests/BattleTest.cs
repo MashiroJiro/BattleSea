@@ -17,12 +17,17 @@ namespace BattleSea.Model.Test
             }
         }
 
+        //
+        // Проверка на убийство всех кораблей ( все ли корабли убиты? ) 
+        //
         [Test]
         public void IsAllShipKilledTest()
         {
             Assert.IsTrue(battle.IsAllShipDead());
         }
-
+        //
+        // Проверка на то, не все ли корабли убиты 
+        //
         [Test]
         public void IsNotAllShipKIlledTest()
         {

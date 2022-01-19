@@ -65,12 +65,8 @@ namespace BattleSea.Model
         }
 
         public static Ship GenerateRandomShip()
-        {
-            Random random = new Random();
-            int startX = random.Next(1, 11);
-            int startY = random.Next(10); 
-            
-            return new Ship(new Point(startX, startY));
+        {            
+            return new Ship(Point.GenerateRandom());
         }
     }
 }

@@ -136,7 +136,7 @@
             this.newGameToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
             this.newGameToolStripMenuItem.Text = "Новая игра с компьютером";
             this.newGameToolStripMenuItem.ToolTipText = "Начать новую игру с компьютером";
-            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.новаяИграСКомпьютеромToolStripMenuItem_Click);
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.NewGameToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -144,7 +144,7 @@
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Q)));
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
             this.exitToolStripMenuItem.Text = "Выход";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // label42
             // 
